@@ -45,6 +45,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "start": "./app/scripts/app.js",
     "test": "karma start test/karma.conf.js"
   }
 }
