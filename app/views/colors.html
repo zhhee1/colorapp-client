@@ -1,0 +1,29 @@
+<a class="btn btn-primary" href="/#!/create/color"><span class="glyphicon glyphicon-plus"></span>Add Person</a>
+<div ng-app="clientApp" ng-controller="ColorsCtrl">
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Surname</th>
+    <th>Name</th>
+    <th>Operations</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr ng-repeat="color in colors">
+    <td><a ng-href="/#!/color/{{ color._id }}">{{ color.surname }}</a></td>
+    <td>{{ color.name }}</td>
+    <td>
+      <div class="button-group">
+        <a ng-href="/#!/color/{{ color._id }}/edit" class="btn btn-default">
+          <span class="glyphicon glyphicon-edit"></span>
+        </a>
+        <a ng-href="/#!/color/{{ color._id }}/delete" class="btn btn-danger">
+          <span class="glyphicon glyphicon-remove-circle"></span>
+        </a>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
