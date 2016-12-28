@@ -43,7 +43,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install && grunt serve",
+    "postinstall": "grunt serve",
     //"start": "grunt serve",
     "test": "karma start test/karma.conf.js"
   }
