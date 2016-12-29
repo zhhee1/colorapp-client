@@ -41,13 +41,10 @@
   "bower":"^1.5.2",
     "grunt":"^0.4.5"
 },
-  "keywords": ["serve"],
-
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "grunt serve",
     "test": "karma start test/karma.conf.js"
   }
 }
