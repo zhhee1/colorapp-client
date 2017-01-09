@@ -1,0 +1,11 @@
+GEM
+remote: http://rubygems.org/
+specs:
+compass (0.12.2)
+
+PLATFORMS
+ruby
+
+DEPENDENCIES
+compass
+
