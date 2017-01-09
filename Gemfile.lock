@@ -1,12 +1,12 @@
 GEM
-remote: http://rubygems.org/
-specs:
-compass (1.0.3)
-sass (3.4.22)
+  remote: http://rubygems.org/
+  specs:
+    compass (1.0.3)
+    sass (3.4.22)
 
 PLATFORMS
-ruby
+  ruby
 
 DEPENDENCIES
-compass
-sass
+  compass
+  sass
