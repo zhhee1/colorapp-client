@@ -1,3 +1,3 @@
-source "http://rubygems.org"
-gem "compass
-gem "sass"
+source 'http://rubygems.org'
+gem 'compass'
+
