@@ -70,9 +70,9 @@ module.exports = function (grunt) {
     // The actual grunt server settings
     connect: {
       options: {
-        port: '0.0.0.0',
+        port: '127.0.0.1',
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: '*',
+        hostname: 'localhost',
         livereload: 35729
       },
       livereload: {
