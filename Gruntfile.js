@@ -72,7 +72,7 @@ module.exports = function (grunt) {
       options: {
         port: grunt.option('port') || '9000',
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: grunt.option('hostname') || 'localhost',
+        hostname: grunt.option('hostname') || 'colorapp-server.herokuapp.com/color',
         livereload: 35729
       },
       livereload: {
