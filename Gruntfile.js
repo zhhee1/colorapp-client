@@ -70,7 +70,7 @@ module.exports = function (grunt) {
     // The actual grunt server settings
     connect: {
       options: {
-        hostname: 'colorapp-server.herokuapp.com/color' || 'localhost',
+        hostname: 'https//colorapp-client.herokuapp.com/' || 'localhost',
         port: process.env.PORT || '9000',
         livereload: 35729,
         middleware: function (connect) {
