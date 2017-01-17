@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "bower":"^1.5.2",
