@@ -47,6 +47,7 @@
   },
   "scripts": {
     "postinstall": "./node_modules/grunt-cli/bin/grunt",
+    "start": "grunt serve",
     "test": "karma start test/karma.conf.js"
   }
 }
