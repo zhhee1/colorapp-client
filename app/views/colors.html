@@ -1,18 +1,18 @@
-<a class="btn btn-primary" href="/#!/create/color"><span class="glyphicon glyphicon-plus"></span>Add Person</a>
+<a class="btn btn-primary" href="/#!/create/color"><span class="glyphicon glyphicon-plus"></span>Add Concept</a>
 <div ng-app="clientApp" ng-controller="ColorsCtrl">
 <table class="table table-striped">
   <thead>
   <tr>
-    <th>Name</th>
-    <th>Surname</th>
+    <th>Concepts</th>
+    <th>Leads to</th>
     <th>Operations</th>
   </tr>
   </thead>
 
   <tbody>
   <tr ng-repeat="color in colors">
-    <td><a ng-href="/#!/color/{{ color._id }}">{{ color.name }}</a></td>
-    <td>{{ color.surname }}</td>
+    <td><a ng-href="/#!/color/{{ color._id }}">{{ color.concept }}</a></td>
+    <td>{{ color.leads }}</td>
     <td>
       <div class="button-group">
         <a ng-href="/#!/color/{{ color._id }}/edit" class="btn btn-default">
