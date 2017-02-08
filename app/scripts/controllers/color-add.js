@@ -9,6 +9,7 @@
  */
 angular.module('clientApp')
   .controller('ColorAddCtrl', function ($scope, Color, $location) {
+    $scope.colors = Color.getList().$object;
     $scope.color = {};
     $scope.saveColor = function () {
       Color.post($scope.color).then(function () {

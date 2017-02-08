@@ -12,6 +12,7 @@ angular.module('clientApp')
     $scope.editColor = true;
     $scope.color = {};
     Color.one($routeParams.id).get().then(function (color) {
+      $scope.colors = Color.getList().$object;
       $scope.color = color;
       $scope.saveColor = function () {
         $scope.color.save().then(function () {
