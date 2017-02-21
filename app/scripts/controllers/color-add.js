@@ -14,6 +14,7 @@ angular.module('clientApp')
     $scope.colors = Color.getList().$object;
     $scope.color = {};
     $scope.color.prerequisites = [];
+    $scope.color.leads = [];
     $scope.addfield=function(){
       $scope.inputs.push({});
     };
