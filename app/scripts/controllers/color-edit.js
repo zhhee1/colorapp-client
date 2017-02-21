@@ -11,9 +11,17 @@ angular.module('clientApp')
   .controller('ColorEditCtrl', function ($scope, $routeParams, Color, $location) {
     $scope.editColor = true;
     $scope.color = {};
+    $scope.inputs = [];
+    $scope.leads = [];
     Color.one($routeParams.id).get().then(function (color) {
       $scope.colors = Color.getList().$object;
       $scope.color = color;
+      $scope.addfield=function(){
+        $scope.inputs.push({});
+      };
+      $scope.addfield2=function(){
+        $scope.leads.push({});
+      };
       $scope.saveColor = function () {
         $scope.color.save().then(function () {
           $location.path('/colors');
