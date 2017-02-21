@@ -13,6 +13,7 @@ angular.module('clientApp')
     $scope.color = {};
     $scope.inputs = [];
     $scope.leads = [];
+    $scope.color.prerequisites = [];
     Color.one($routeParams.id).get().then(function (color) {
       $scope.colors = Color.getList().$object;
       $scope.color = color;

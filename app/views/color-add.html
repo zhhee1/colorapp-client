@@ -22,9 +22,9 @@
 
   <div class="form-group">
     <label for="concept" class="control-label">Leads to</label>
-    <input type="text" ng-model="color.leads" class="form-control" id="concept" placeholder="Enter what it Leads to">
+    <input type="text" ng-model="color.leads[0]" class="form-control" id="concept" placeholder="Enter what it Leads to">
   <div ng-repeat="input in leads">
-    <input type="text" class="form-control" placeholder="Additional Leads">
+    <input type="text" ng-model="color.leads[1]" class="form-control" placeholder="Additional Leads">
   </div>
   <button ng-click="addfield2()">Add Leads</button>
   </div>
