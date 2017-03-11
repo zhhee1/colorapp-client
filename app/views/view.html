@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div ng-app="clientApp" ng-controller="ViewCtrl">
+
+  <ul>
+    <li ng-repeat="color in colors">
+      {{ color.concept + ', ' + color.leads }}
+      console.log(color);
+    </li>
+  </ul>
+
+</div>
+</body>
+</html>

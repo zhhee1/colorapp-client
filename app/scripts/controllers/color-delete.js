@@ -12,10 +12,10 @@ angular.module('clientApp')
     $scope.color = Color.one($routeParams.id).get().$object;
     $scope.deleteColor = function () {
       $scope.color.remove().then(function () {
-        $location.path('/colors');
+        $location.path('/concept');
       });
     };
     $scope.back = function () {
-      $location.path('/colors');
+      $location.path('/concept');
     };
   });

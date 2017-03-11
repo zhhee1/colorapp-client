@@ -23,7 +23,7 @@ angular.module('clientApp')
     };
     $scope.saveColor = function () {
       Color.post($scope.color).then(function () {
-        $location.path('/colors');
+        $location.path('/concept');
       });
     };
   });

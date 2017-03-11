@@ -26,7 +26,7 @@ angular.module('clientApp')
       };
       $scope.saveColor = function () {
         $scope.color.save().then(function () {
-          $location.path('/colors');
+          $location.path('/concept');
         });
       };
     });

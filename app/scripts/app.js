@@ -14,7 +14,7 @@ angular
   ])
   .config(function ($routeProvider, RestangularProvider) {
 
-    RestangularProvider.setBaseUrl('https://colorapp-server.herokuapp.com/');
+    RestangularProvider.setBaseUrl('http://localhost:3000');
 
     $routeProvider
       .when('/', {
@@ -27,30 +27,35 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/colors', {
+      .when('/concept', {
         templateUrl: 'views/colors.html',
         controller: 'ColorsCtrl',
         controllerAs: 'colors'
       })
-      .when('/create/color', {
+      .when('/create/concept', {
         templateUrl: 'views/color-add.html',
         controller: 'ColorAddCtrl',
         controllerAs: 'colorAdd'
       })
-      .when('/color/:id', {
+      .when('/concept/:id', {
         templateUrl: 'views/color-view.html',
         controller: 'ColorViewCtrl',
         controllerAs: 'colorView'
       })
-      .when('/color/:id/delete', {
+      .when('/concept/:id/delete', {
         templateUrl: 'views/color-delete.html',
         controller: 'ColorDeleteCtrl',
         controllerAs: 'colorDelete'
       })
-      .when('/color/:id/edit', {
+      .when('/concept/:id/edit', {
         templateUrl: 'views/color-edit.html',
         controller: 'ColorEditCtrl',
         controllerAs: 'colorEdit'
+      })
+      .when('/view', {
+        templateUrl: 'views/view.html',
+        controller: 'ViewCtrl',
+        controllerAs: 'view'
       })
       .otherwise({
         redirectTo: '/'
