@@ -14,7 +14,7 @@ angular
   ])
   .config(function ($routeProvider, RestangularProvider) {
 
-    RestangularProvider.setBaseUrl('https://colorapp-server.herokuapp.com/color');
+    RestangularProvider.setBaseUrl('https://colorapp-server.herokuapp.com');
 
     $routeProvider
       .when('/', {
